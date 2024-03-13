@@ -1,0 +1,7 @@
+add_executable(test_latency_publisher ${CMAKE_CURRENT_SOURCE_DIR}/src/test_latency_publisher.cpp)
+lcm_target_link_libraries(test_latency_publisher messages_cpp ${LCM_NAMESPACE}lcm)
+target_link_libraries(test_latency_publisher logger_config Threads::Threads)
+
+add_executable(test_latency_subscriber ${CMAKE_CURRENT_SOURCE_DIR}/src/test_latency_subscriber.cpp)
+lcm_target_link_libraries(test_latency_subscriber messages_cpp ${LCM_NAMESPACE}lcm)
+target_link_libraries(test_latency_subscriber logger_config)

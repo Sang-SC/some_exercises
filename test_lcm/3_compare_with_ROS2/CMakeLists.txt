@@ -1,0 +1,5 @@
+add_executable(test_latency_publisher_ros2 ${CMAKE_CURRENT_SOURCE_DIR}/src/test_latency_publisher_ros2.cpp)
+target_link_libraries(test_latency_publisher_ros2 rclcpp::rclcpp logger_config)
+
+add_executable(test_latency_subscriber_ros2 ${CMAKE_CURRENT_SOURCE_DIR}/src/test_latency_subscriber_ros2.cpp)
+target_link_libraries(test_latency_subscriber_ros2 rclcpp::rclcpp logger_config)

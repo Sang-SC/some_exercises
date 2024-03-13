@@ -1,0 +1,7 @@
+package latency_lcm;
+
+struct test_latency
+{
+    int64_t sec;
+    int64_t nanosec;
+}

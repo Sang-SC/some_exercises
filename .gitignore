@@ -1,0 +1,12 @@
+test_matplotlibcpp/build
+test_matplotlibcpp/build/*
+
+test_rbdl/build
+test_rbdl/build/*
+
+test_cpptime/build
+test_cpptime/build/*
+
+test_lcm/build
+test_lcm/build/*
+
