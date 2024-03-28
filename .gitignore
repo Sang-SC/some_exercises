@@ -12,3 +12,12 @@ test_cpptime/build/*
 test_lcm/build
 test_lcm/build/*
 
+!stm32_projects/
+!stm32_projects/**
+
+# 忽略当前目录以及所有子目录中名为build的文件夹
+build/
+
+# 忽略当前目录以及所有子目录中名为.vscode的文件夹
+.vscode/
+
