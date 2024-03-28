@@ -11,4 +11,4 @@ target_link_libraries(logger_config spdlog::spdlog)
 target_include_directories(logger_config PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 add_executable(main main.cpp)
-target_link_libraries(main logger_config)  # cpptime 库依赖于 pthread 库
+target_link_libraries(main logger_config Threads::Threads)  # cpptime 库依赖于 pthread 库
