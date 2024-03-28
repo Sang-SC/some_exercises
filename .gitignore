@@ -1,14 +1,24 @@
+# 忽略当前目录下的所有文件和文件夹
 *
 
-test_matplotlibcpp/build
-test_matplotlibcpp/build/*
+!test_matplotlibcpp/
+!test_matplotlibcpp/**
 
-test_rbdl/build
-test_rbdl/build/*
+!test_rbdl/
+!test_rbdl/**
 
-test_cpptime/build
-test_cpptime/build/*
+!test_cpptime/
+!test_cpptime/**
 
-test_lcm/build
-test_lcm/build/*
+!test_lcm/
+!test_lcm/**
 
+!stm32_projects/
+!stm32_projects/**
+
+
+# 忽略当前目录以及所有子目录中名为build的文件夹，这一行规则需要放到最后，否则会被覆盖
+build/
+
+# 忽略当前目录以及所有子目录中名为.vscode的文件夹，这一行规则需要放到最后，否则会被覆盖
+.vscode/
